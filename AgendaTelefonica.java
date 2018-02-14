@@ -22,14 +22,24 @@ public class AgendaTelefonica
     /**
      * Permite introducir a personas con su número de teléfono.
      */
-    public void enterNumber(String name, String number) {
+    public void enterNumber(String name, String number)
+    {
         agenda.put(name, number);
     }
     
     /**
      * Permite buscar el número de teléfono de una persona.
      */
-    public void lookUpNumber(String name) {
+    public void lookUpNumber(String name)
+    {
         System.out.println(agenda.get(name));
+    }
+    
+    /**
+     * Print all keys.
+     */
+    public void printAllNames() 
+    {
+        System.out.println(agenda.keySet());
     }
 }
